@@ -38,7 +38,7 @@ export const TranslatePage = () => {
     const {ok, message} = await translateTextUseCase(text,selectedOption);
 
     setIsLoading(false);
-    if ( !ok ) return;      
+    if ( !ok ) return alert(message);      
 
     setMessages((prev)=> [...prev,{text:message,isGpt:true}]);
      
