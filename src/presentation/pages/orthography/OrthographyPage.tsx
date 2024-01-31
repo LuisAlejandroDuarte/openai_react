@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { GptMessage, GptOrthographyMessage, MyMessage,  TextMessageBox, TypingLoader } from "../../components"
-import { orthographyUSeCase } from "../../../core/use-cases";
+import {  orthographyUSeCase } from "../../../core/use-cases";
 
 interface Message {
   text:string;
